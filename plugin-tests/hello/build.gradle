@@ -1,0 +1,16 @@
+buildscript {
+	repositories {
+		flatDir {
+			dirs '../../build/libs'
+		}
+		jcenter()
+		mavenCentral()
+		
+	}
+	dependencies {
+		classpath group: 'com.blogspot.jvalentino.gradle', name: 'hello-world-codenarc', version: '1.0.0'
+	}
+}
+
+apply plugin: 'hello-plugin'
+
